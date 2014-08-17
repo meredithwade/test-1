@@ -1,74 +1,70 @@
 body {
-	background-color: blue;
-	color: white;
-	font-family: helvetica, arial, sans-serif;
-	font-size: 12px;
-	font-weight: 500;
-	line-height: 1em;
-}
+  background-color: blue;
+  color: white;
+  font-family: helvetica, arial, sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1em; }
 
 .container {
-	width: 100%;
-	background-color: purple;
-	border: 2px solid;
-	border-radius: 15px;
-	height: 90px;
-}
+  width: 100%;
+  background-color: purple;
+  border: 2px solid;
+  border-radius: 15px;
+  height: 90px; }
+  @media all and (max-width: 479px) {
+    .container {
+      background-color: white;
+      display: none; } }
+  @media all and (min-width: 480px) and (max-width: 767px) {
+    .container {
+      background-color: white; } }
+  @media all and (min-width: 768px) and (max-width: 991px) {
+    .container {
+      background-color: white; } }
 
 .header {
-	width: 50%;
-	height: 96%;
-	background-color: green;
-	margin: 0 25%;
-	border: 2px solid;
-	border-radius: 25px;
-	text-align: center;
-}
+  width: 50%;
+  height: 96%;
+  background-color: green;
+  margin: 0 25%;
+  border: 2px solid;
+  border-radius: 25px;
+  text-align: center; }
 
 .front {
-	margin-top: 50px;
-	text-align: center;
-}
+  margin-top: 50px;
+  text-align: center; }
 
 .flip-container {
-	display: block;
-	margin: 0 auto;	
-	perspective: 1000;
-	width: 100%;
-	height: 100%;
-
-}
+  display: block;
+  margin: 0 auto;
+  perspective: 1000;
+  width: 100%;
+  height: 100%; }
 
 .flip-container:hover .flipper, .flip-container.hover .flipper {
-	transform: rotateY(180deg);
-}
+  transform: rotateY(180deg); }
 
 .flip-container, .front, .back {
-	width: 320px;
-	height: 480px;
-	}
+  width: 320px;
+  height: 480px; }
 
 .flipper {
-	transition: 0.6s;
-	transform-style: preserve-3d;
-
-	position: relative;
-}
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative; }
 
 .front, .back {
-	backface-visibility: hidden;
-
-	position: absolute;
-	top: 0;
-	left: 0;
-}
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0; }
 
 .front {
-	z-index: 2;
-}
+  z-index: 2; }
 
 .back {
-	transform: rotateY(180deg);
-	text-align: center;
-	margin-top: 30%;
-}
+  transform: rotateY(180deg);
+  text-align: center;
+  margin-top: 30%; }
